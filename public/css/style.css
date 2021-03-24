@@ -1,7 +1,29 @@
+/* Exo 1 */
+
+#exo1 > h1::after {
+    content:'';
+    display: block;
+    width: 0px;
+    height: 5px;
+    background-color: red;
+    transition: width 2s;
+}
+
+#exo1 >h1:hover::after {
+    width: 55px;
+    height: 5px;
+}
 
 /* fin Exo 1 */
 
 /* Exo 2 */
+
+#exo2 h1::after {
+    content: '';
+    width:0;
+    height: 5px;
+    
+}
 
 /* fin Exo 2 */
 
