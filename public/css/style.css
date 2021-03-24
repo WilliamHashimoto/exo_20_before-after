@@ -18,15 +18,50 @@
 
 /* Exo 2 */
 
+#exo2 > h1 {
+    width: max-content;
+}
+
 #exo2 h1::after {
     content: '';
-    width:0;
+    display: block;
+    margin: 0 auto;
     height: 5px;
-    
+    width: 0;
+    background-color: red;
+    transition-duration: 3s;
+}
+
+#exo2 >h1:hover::after {
+    width: 55px;
+    height: 5px;
 }
 
 /* fin Exo 2 */
 
 /* Exo 3 */
+
+#exo3 > h1 {
+    width: max-content;
+}
+
+#exo3 > h1::after {
+    content: '';
+    background-color: red;
+    display: block;
+    height: 0px;
+    width: 58px;
+    position:relative;
+    top: 0px;
+    transition: top 3s, height 3s;
+    z-index: -1;
+}
+
+#exo3 > h1:hover::after {
+    top: -28px;
+    height: 28px;
+
+}
+
 
 /* fin Exo 3 */
